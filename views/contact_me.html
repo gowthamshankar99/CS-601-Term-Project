@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+        <link rel="stylesheet" href="print-stylesheet.css" type="text/css" media="print" />
+        <script src="index.js"></script>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+</head>
+
+<body>
+        <header>
+                <h5 class="headerLogLinks">
+                    <a class="headerlink" id="logout" href="/logout">logout</a>
+                </h5>
+                <h5 class="headerLogLinks" id="login">
+                    <a class="headerlink" href="/login">login</a>
+                </h5>
+        
+                <h5 class="headerLogLinks" id="userid" onclick="getuserdetails()"></h5>
+                <img id="imageId" width="40" height="40" alt="imageId" src="/sample"/>
+                <h2 class="headerText">
+                    <a class="headerlink" href="/">My Biography</a>
+                </h2>
+        
+            </header>
+        <hr>
+        <nav class="navbar2">
+                <ul class="ulremovebullet">
+                        <li class="navlinks">
+                                <a href="/" class="links">About me</a>
+                        </li>
+                        <li class="navlinks">
+                                <a href="/education" class="links">Skillset</a>
+                        </li>
+                        <li class="navlinks">
+                                <a href="/projects" class="links">My Projects</a>
+                        </li>
+                        <li class="navlinks">
+                                <a href="/gallery" class="links">Gallery</a>
+                        </li>
+                        <li class="navlinks active">
+                                <a href="/contact" class="links">Contact Me</a>
+                        </li>
+                        <li id="navlinks2">
+                                <a href="/admin" class="links">Admin</a>
+                        </li>
+                </ul>
+        </nav>
+
+        <main>
+                <h2 class="pageHeader">Contact Me</h2>
+                <div style="margin:0 auto;">
+                        <nav style="display: inline-block;list-style-type: none;">
+                                <span class="contactLinks">
+                                        <img src="twitter.jpg" width="20" height="20" alt="twitter" />
+                                        <a target="_blank" href="https://twitter.com/javaislife" class="contactLinksNo">twitter</a>
+                                </span>
+                                <span class="contactLinks">
+                                        <img src="linkedin.png" width="20" height="20" alt="twitter" />
+                                        <a target="_blank" href="https://www.linkedin.com/in/gowtham-shankar-aa4266116/" class="contactLinksNo">linkedin</a>
+                                </span>
+                                <span class="contactLinks">
+                                        <img src="fb.png" width="20" height="20" alt="twitter" />
+                                        <a target="_blank" href="https://www.facebook.com/monisha.manivasagam.7" class="contactLinksNo">facebook</a>
+                                </span>
+                                <span class="contactLinks">
+                                        <img src="github.png" width="20" height="20" alt="twitter" />
+                                        <a target="_blank" href="https://github.com/gowthamshankar99" class="contactLinksNo">Github</a>
+                                </span>
+                                <span class="contactLinks">
+                                        <img src="stackoverflow.png" width="20" height="20" alt="twitter" />
+                                        <a target="_blank" href="https://stackoverflow.com/users/5906349/gowtham" class="contactLinksNo">Stackoverflow</a>
+                                </span>
+                        </nav>
+                </div>
+                <br>
+                <br>
+                <br>
+
+                <h3 style="text-align: center;">Send me a Message</h3>
+                <div class="formDiv">
+                        <form action="/contact" method="POST" onsubmit="return verifyErrors()">
+                                <div>First Name:
+                                        <input class="formValues" id="firstName" name="firstName" type="text">
+                                </div>
+                                <div id="firstNameError"></div>
+                                <div>Last Name:
+                                        <input class="formValues" id="lastName" name="lastName" type="text">
+                                </div>
+                                <div id="lastNameError"></div>
+                                <div>Email:
+                                        <input class="formValues" name="email" id="email" type="email">
+                                </div>
+                                <div id="emailError"></div>
+                                <div>Message:
+                                        <textarea class="formValues" name="message" id="message" rows="4" cols="50"></textarea>
+                                </div>
+                                <div id="messageError"></div>
+
+                                <div class="divAlign">
+                                        <button type="button" onclick="validateForm()" class="submitButton">Validate Form</button>
+                                        <button type="button" onclick="clearFields()" class="submitButton">Clear Fields</button>
+                                        <input type="submit" class="submitButton" id="jquerySubmitButton" value="submit" />
+                                </div>
+                                <div id="successMessage">Data sent to the Admin successfully!</div>
+                        </form>
+
+                </div>
+                <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                                <div>
+                                        <span class="close" onclick="closeModal()">&times;</span>
+                                </div>
+                                <h2>User Information</h2>
+                                <hr>
+
+                                <p id="modalText"></p>
+                        </div>
+
+                </div>
+        </main>
+        <footer>
+                <div>&copy; Gowtham Shankar - Boston University</div>
+        </footer>
+</body>
+
+</html>

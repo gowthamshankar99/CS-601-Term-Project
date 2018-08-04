@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="print-stylesheet.css" type="text/css" media="print" />
+        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+        <title>Admin</title>
+        <meta charset="UTF-8">
+</head>
+
+<body>
+        <header>
+                <h5 class="headerLogLinks">
+                    <a class="headerlink" id="logout" href="/logout">logout</a>
+                </h5>
+                <h5 class="headerLogLinks" id="login">
+                    <a class="headerlink" href="/login">login</a>
+                </h5>
+        
+                <h5 class="headerLogLinks" id="userid" onclick="getuserdetails()"></h5>
+                <img id="imageId" width="40" height="40" alt="imageId" src="/sample"/>
+                <h2 class="headerText">
+                    <a class="headerlink" href="/">My Biography</a>
+                </h2>
+        
+            </header>
+        <hr>
+        <nav class="navbar2">
+                <ul class="ulremovebullet">
+                        <li class="navlinks">
+                                <a href="/" class="links">About me</a>
+                        </li>
+                        <li class="navlinks">
+                                <a href="/education" class="links">Skillset</a>
+                        </li>
+                        <li class="navlinks">
+                                <a href="/projects" class="links">My Projects</a>
+                        </li>
+                        <li class="navlinks">
+                                <a href="/gallery" class="links">Gallery</a>
+                        </li>
+                        <li class="navlinks">
+                                <a href="/contact" class="links">Contact Me</a>
+                        </li>
+                        <li id="navlinks2" class="navlinks active">
+                                <a href="/admin" class="links">Admin</a>
+                        </li>
+                </ul>
+        </nav>
+
+        <main>
+                <table id="table1">
+                        <tr>
+                                <td class="hideTablCell"></td>
+                                <td class="hideTablCell"></td>
+                                <td class="hideTablCell"></td>
+                                <td class="hideTablCell"></td>
+                                <td class="hideTablCell"></td>
+                                <td class="hideTablCell"></td>
+                        </tr>
+                </table>
+                <div id="myModal" class="modal">
+                        <div class="modal-content">
+                                <div>
+                                        <span class="close" onclick="closeModal()">&times;</span>
+                                </div>
+                                <h2>User Information</h2>
+                                <hr>
+
+                                <p id="modalText"></p>
+                        </div>
+
+                </div>
+        </main>
+        <footer>
+                <div>&copy; Gowtham Shankar - Boston University</div>
+        </footer>
+</body>
+
+</html>

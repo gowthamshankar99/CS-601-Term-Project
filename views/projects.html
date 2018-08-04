@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+  <link rel="stylesheet" href="print-stylesheet.css" type="text/css" media="print" />
+
+  <title>Projects</title>
+  <meta charset="UTF-8">
+  <script>
+  /** $( function() {
+    $( "#accordion" ).accordion({
+        heightStyle: "content",
+        collapsible: true
+    });
+  } ); **/
+  </script>
+</head>
+<body>
+        <header>
+                <h5 class="headerLogLinks">
+                    <a class="headerlink" id="logout" href="/logout">logout</a>
+                </h5>
+                <h5 class="headerLogLinks" id="login">
+                    <a class="headerlink" href="/login">login</a>
+                </h5>
+        
+                <h5 class="headerLogLinks" id="userid" onclick="getuserdetails()"></h5>
+                <img id="imageId" width="40" height="40" alt="imageId" src="/sample"/>
+                <h2 class="headerText">
+                    <a class="headerlink" href="/">My Biography</a>
+                </h2>
+        
+            </header>
+            <hr>
+
+            <nav class="navbar2">
+                <ul class="ulremovebullet">
+                    <li class="navlinks">
+                        <a href="/" class="links">About me</a>
+                    </li>
+                    <li class="navlinks">
+                        <a href="/education" class="links">Skillset</a>
+                    </li>
+                    <li class="navlinks active">
+                        <a href="/projects" class="links">My Projects</a>
+                    </li>
+                    <li class="navlinks">
+                        <a href="/gallery" class="links">Gallery</a>
+                    </li>
+                    <li class="navlinks">
+                        <a href="/contact" class="links">Contact Me</a>
+                    </li>
+                    <li id="navlinks2">
+                        <a href="/admin" class="links">Admin</a>
+                    </li>
+                </ul>
+            </nav>
+<main>
+        <h2 class="pageHeader">Resume</h2>
+        <a href="https://s3.amazonaws.com/resumegowthamshankar/GowthamShankar_resume.docx" class="resumelinks">
+            <div class="pageHeader">Download Resume</div>
+        </a>
+        <h2 class="pageHeader">Projects</h2>
+<div id="accordion">
+
+  <h3>Creating a Stock Market application using Python and REST API's</h3>
+  <div>
+    <p>
+            Description: Stock analysis Application: Created a stock analysis application using Quandl Application programming interface and created my own custom data in Dynamo DB database to analyze the stock trend. Implementation of GET, POST, PUT and Delete were performed using API gateway(Video Presentation is attached below).
+    </p>
+    <div>Technologies :
+            <img src="python.png" height="30" width="30" alt="python" />
+            <img src="restful_api.jpg" height="30" width="60" alt="restfulapi" />
+            <img src="aws.png" height="30" width="60" alt="aws" />
+
+        </div>
+  </div>
+
+  <h3>Integrating Polly with Lambda and Dynamo DB, S3 to convert text to Speech.</h3>
+  <div>
+    <p>
+            Description: User will input the text in a simple PHP web application, and the text will be automatically converted into speech in the format of mp3 and the mp3 file will be stored in S3. The text data will also be stored in a NoSQL dynamo DB database. All of these components are tied together by using server-less Lambda functions.
+    </p>
+    <p>
+            Technologies :
+            <img src="aws.png" height="30" width="60" alt="aws" />
+    </p>
+  </div>
+  <h3>RESTAPI's using API gateway, Lambda and Dynamo DB Database</h3>
+  <div>
+    <p>
+            Description: Stock analysis Application: Created a stock analysis application using Quandl Application programming interface and created my own custom data in Dynamo DB database to analyze the stock trend. Implementation of GET, POST, PUT and Delete were performed using API gateway.
+    </p>
+    <p>
+            Technologies :
+            <img src="aws.png" height="30" width="60" alt="aws" />
+    </p>
+  </div>
+  <h3>Creating data replication for S3 Bucket using AWS Lambda.</h3>
+  <div>
+    <p>
+            Description: Used S3 trigger to invoke Lambda function and replicate the S3 objects in an entirely different bucket that can be used as a backup.
+    </p>
+    <p>
+            Technologies :
+            <img src="aws.png" height="30" width="60" alt="aws" />
+    </p>
+  </div>
+
+      <h3>
+            Creating SNS push notification application using Lambda.
+      </h3>
+      <div>
+      <p>
+            Description: Used SNS and Lambda to push notification on weekdays, weekends, Month end Daily news reminders.
+      </p>
+      <p>
+            Technologies :
+            <img src="aws.png" height="30" width="60" alt="aws" />
+      </p>  
+  </div>
+
+      <h3>
+            AWS S3 Folder Management
+      </h3>
+      <div>
+      <p>
+            Description: Created AWS S3 buckets, performed folder management in each bucket, managed objects within each bucket.
+      </p>
+      <p>
+            Technologies :
+            <img src="aws.png" height="30" width="60" alt="aws" />
+            <br>
+            <iframe id="kaltura_player" width="400" height="180" src="https://www.youtube.com/embed/T8zvaFxNYYE" allowfullscreen></iframe>
+    </p>
+  </div>
+</div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div>
+                        <span class="close" onclick="closeModal()">&times;</span>
+                    </div>
+                    <h2>User Information</h2>
+                    <hr>
+    
+                    <p id="modalText"></p>
+                </div>
+    
+            </div>
+</main>
+ 
+<footer>
+        <div>&copy; Gowtham Shankar - Boston University</div>
+</footer>
+</body>
+</html>

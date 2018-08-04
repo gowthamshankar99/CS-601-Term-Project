@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+    <link rel="stylesheet" href="print-stylesheet.css" type="text/css" media="print" />
+
+
+    <title>Education</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <h5 class="headerLogLinks">
+            <a class="headerlink" id="logout" href="/logout">logout</a>
+        </h5>
+        <h5 class="headerLogLinks" id="login">
+            <a class="headerlink" href="/login">login</a>
+        </h5>
+
+        <h5 class="headerLogLinks" id="userid" onclick="getuserdetails()"></h5>
+        <img id="imageId" width="40" height="40" alt="imageId" src="/sample"/>
+        <h2 class="headerText">
+            <a class="headerlink" href="/">My Biography</a>
+        </h2>
+
+    </header>
+    <hr>
+    <nav class="navbar2">
+        <ul class="ulremovebullet">
+            <li class="navlinks">
+                <a href="/" class="links">About me</a>
+            </li>
+            <li class="navlinks active">
+                    <a href="/education" class="links">Skillset</a>
+            </li>
+            <li class="navlinks">
+                    <a href="/projects" class="links">My Projects</a>
+            </li>
+            <li class="navlinks">
+                    <a href="/gallery" class="links">Gallery</a>
+            </li>
+            <li class="navlinks">
+                    <a href="/contact" class="links">Contact Me</a>
+            </li>
+            <li id="navlinks2">
+                    <a href="/admin" class="links">Admin</a>
+            </li>   
+        </ul>
+    </nav>
+    <main>
+        <h2 class="pageHeader">Skillset History</h2>
+        <h4>Certifications</h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Company</td>
+                    <td>Certification Name</td>
+                    <td>Year obtained</td>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <img src="aws.png" width="50" height="50" alt="The Hartford" />
+                </td>
+                <td>AWS</td>
+                <td>Amazon Certified Developer</td>
+                <td>August - 2017</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="aws.png" width="50" height="50" alt="The Hartford" />
+                </td>
+                <td>AWS</td>
+                <td>Amazon Certified Solution architect</td>
+                <td>September - 2017</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <img src="aws.png" width="50" height="50" alt="The Hartford" />
+                </td>
+                <td>AWS</td>
+                <td>Amazon Certified Sysops administrator</td>
+                <td>February - 2018</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="cisco.jpg" width="50" height="50" alt="The Hartford" />
+                </td>
+                <td>Cisco</td>
+                <td>Cisco Certified Network Assosiate</td>
+                <td>August - 2012</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="oracle.png" width="50" height="50" alt="The Hartford" />
+                </td>
+                <td>Oracle</td>
+                <td>Oracle Certified java Programmer</td>
+                <td>November - 2013</td>
+            </tr>
+
+        </table>
+
+        <h4>Experience</h4>
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Company</td>
+                    <td>Years</td>
+                    <td>Role</td>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <img src="the_hartford.jpg" width="50" height="50" alt="The Hartford" />
+                </td>
+                <td>The Hartford</td>
+                <td>June 2016 - Present</td>
+                <td>Senior IT Engineer</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="cigna_416x416.jpg" width="50" height="50" alt="Cigna healthare" />
+                </td>
+                <td>Cigna Healthcare</td>
+                <td>Jan 2015 - May 2016</td>
+                <td>Senior Java Developer</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <img src="tata_consultancy_services.png" width="50" height="50" alt="Tata consultancy services"
+                    />
+                </td>
+                <td>Tata Consultancy Services</td>
+                <td>Jan 2011 - Dec 2015</td>
+                <td>IT Analyst</td>
+            </tr>
+
+        </table>
+
+        <h4>Education History</h4>
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>University</td>
+                    <td>Years</td>
+                    <td>Major</td>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <img src="bu.png" width="50" height="50" alt="The Hartford" />
+                </td>
+                <td>Boston University</td>
+                <td>Jan 2018 - March 2019</td>
+                <td>M.S in Computer Information Systems</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="annamalai_univ.jpg" width="50" height="50" alt="Cigna healthare" />
+                </td>
+                <td>Annamalai University</td>
+                <td>May 2009 - May 2010</td>
+                <td>Diploma in Embdedded System and application</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <img src="annamalai_univ.jpg" width="50" height="50" alt="Tata consultancy services" />
+                </td>
+                <td>Annamalai University</td>
+                <td>May 2006 - Aug 2010</td>
+                <td>Electronics and Communication Engineering</td>
+            </tr>
+
+        </table>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div><span class="close" onclick="closeModal()">&times;</span></div>
+                            <h2>User Information</h2>
+                            <hr>
+            
+                            <p id="modalText"></p>
+                        </div>
+            
+                    </div>
+    </main>
+    <footer>
+        <div>&copy; Gowtham Shankar - Boston University</div>
+    </footer>
+
+</body>
+
+</html>
